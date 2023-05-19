@@ -1,0 +1,249 @@
+
+.banner-image-static{
+    visibility: hidden;
+}
+.banner-images{
+    opacity: 0;
+    position: absolute;
+   
+}
+/*-------------top-banner-animation--------------*/
+
+@keyframes fadeUp {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes fadeDown {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.fade-up-image{
+    animation: fadeUp 2s;
+    position: absolute
+}
+.fade-down-image{
+    animation: fadeDown 2s;
+    position: absolute
+}
+
+/*------------recharge card---------------*/
+.bi-chevron-right{
+    font-size: 18px;
+    color: #fff;
+}
+.sim-icon-contain{
+    height: 100px;
+    width: 100px;
+    background-color: #fdf6ec;
+    border: 1px solid #f9e8d0;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.sim-icon-contain p{
+    font-size: 11px;
+    text-align: center;
+
+}
+/*-------------second-banner-slide-------------*/
+.button-right{
+    position: absolute;
+    right: -60px;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+   
+}
+.bi{
+    font-size: 50px;
+}
+.button-left{
+    
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    transform: rotate(180deg);   
+}
+
+/*---------------best-post-paid----------------*/
+.best-post-paid{
+    margin-top: 100px;
+}
+.bottom-best .bottom-lists{
+    margin: 0 10px;
+    font-size: 14px;
+    border-bottom: 4px solid rgba(0,0,0,0);
+    cursor: pointer;
+}
+.bottom-lists.indi{
+    border-color: red;
+    font-weight: bold;
+}
+.card-top{
+    height: inherit;
+    margin: 0 10px;
+    justify-content: start;
+    padding: 0px 20px 0px 0;
+    border-bottom: 2px solid #b2b3bc;
+    border-bottom-style: dashed;
+   
+    
+}
+.card-body p{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 10px;
+    line-height: 15px;
+}
+.c-body-p1{
+    display: flex;
+  
+}
+.c-body-p{
+    display: flex;
+    
+    margin-right: 80px;
+}
+.card-top h4{
+    font-size: 15px;
+    font-weight: bold;
+    color: #82838e;
+}
+.card-top span{
+    font-size: 2rem;
+    font-weight: bold;
+    color:black;
+  
+}
+.card-bottom{
+    padding-top: 30px;
+    position: relative;
+}
+.card-bottom .btn1{
+   
+  min-width: 100%;
+   background-color: var(--vi-red);
+   border-radius: 30px;
+   color: #fff;
+   font-weight: bold;
+   padding: 10px 0;
+   border: none;
+   
+}
+.top-left-sticky{
+    padding:2px  5px;
+    font-size: 14px;
+    font-weight: bold;
+    top: -5%;
+    background-color: #ffcc1b;
+    border-radius: 5px 5px 5px 0;
+    
+}
+/*-------------------mini-card-------------------------------------*/
+.card-top-top p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #82838e;
+    line-height: 18px;
+  
+}
+.card-top-top>p>span{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+.card-top-bottom button{
+   width:100%;
+   background-color: var(--vi-red);
+   border-radius: 30px;
+   color: #fff;
+   font-weight: bold;
+   padding: 5px 20px;
+   border: none;
+}
+.card-body{
+    padding: 0;
+}
+/*----------------------/mini-card------------------------------*/
+ .prepaid-cards{
+    background-color: #fbf1e3;
+}
+.wifi-banner{
+    max-width: 100%;
+    max-height: auto;
+}
+.wifi-4-icons{
+    padding: 0 100px;
+}
+.wifi-icon-lists{
+    max-width: 100px;
+}
+.large-box{
+    background-color: #f9e8d0;
+    padding:200px 30px 20px 20px
+}
+.small-box-1{
+    background-color: #dfebfb;
+}
+.small-box-2{
+    background-color:  #ffbbac;
+}
+.b-icon img{
+    width: 40px;
+}
+.bottom-phone .left p{
+    font-size: 14px;
+}
+.something{
+    height: 400px;
+}
+.footer-lists{
+    background-color:#fdf8f0 ;
+}
+.footer-lists ul{
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0;
+}
+.footer-lists p{
+    font-size: 10px;
+    font-weight: bold;
+}
+.footer-lists h5{
+    font-size: 18px;
+    font-weight: bold;
+}
+.list-top,
+.list-bottom{
+    padding-left: 15px;
+    
+}
+
+.list-bottom li{
+    padding: 5px 0;
+    height: 0%;
+}
+@media (max-width:768px) {
+    .list-top{
+        border-bottom: 1px solid rgb(204, 202, 202);
+        margin: 0 15px;
+        padding: 15px 0;
+        cursor: pointer;
+       
+    }
+    .list-bottom{
+       display: none;
+      
+    }
+
+}
+
+.prepaid-parent:nth-child(1){
+    color: green;
+}

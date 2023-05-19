@@ -1,0 +1,191 @@
+:root{
+    box-sizing: border-box;
+    --vi-red:#ee2737;
+
+}
+body{
+    
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    position: fixed;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 3px solid #f8f9fa;
+    z-index: 100;
+    background-color: #fff;
+}
+.nav-lists>ul,
+.end-nav-lists ul{
+    display:inline-flex ;
+    list-style-type: none;
+    margin: 0 50px 0 0;
+    padding: 0;
+  
+  
+    
+   
+}
+.nav-lists>ul>li,
+.end-nav-lists li{
+    padding-top: 20px;
+    height: 60px;
+    width: fit-content;
+    position: relative;
+    margin: 5px;
+    white-space: nowrap;
+    border-bottom: 3px solid rgba(0,0,0,0);
+    
+  
+    &:hover{
+        font-weight: bold;
+        border-color:var(--vi-red);
+    }
+    
+}
+.prepaid-lists{
+    position: absolute;
+    display: flex;
+    top: 100%;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 20px 32px 0 rgb(96 97 112 / 10%),0 2px 8px 0 rgb(40 41 61 / 6%) ;
+    visibility: hidden;
+    opacity: 0;
+    transition: .25s;
+    transition-timing-function: ease-in-out;
+    background-color: #fff;
+
+}
+.prepaid-lists>ul,
+.explore-lists>ul{
+   list-style-type: none;
+   padding-left: 15px;
+}
+.prepaid-lists>ul>li,
+.explore-lists>ul>li{
+   padding: 15px 55px 15px 5px;
+   width: 190px;
+   white-space: nowrap;
+   font-weight: normal;
+   &:hover{
+    font-weight: bold;
+   }
+
+}
+.prepaid-lists-li:hover .prepaid-lists{
+    visibility: visible;
+    opacity: 100%;
+    z-index: 2;
+   
+}
+.postpaid-list-li:hover .prepaid-lists.postpaid{
+    visibility: visible;
+    opacity: 100%;
+    z-index: 2;
+}
+.new-connection-lists-li:hover .prepaid-lists.new-connection{
+    visibility: visible;
+    opacity: 100%;
+    z-index: 2;
+}
+.explore-lists{
+    position: absolute;
+    display: flex;
+    top: 100%;
+    right: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 20px 32px 0 rgb(96 97 112 / 10%),0 2px 8px 0 rgb(40 41 61 / 6%) ;
+    visibility: hidden;
+    opacity: 0;
+    transition: .25s;
+    transition-timing-function: ease-in-out;
+    background-color: #fff;
+
+}
+.explore-lists-li:hover .explore-lists{
+    visibility: visible;
+    opacity: 100%;
+    z-index: 2;
+}
+.help-lists{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    top: 100%;
+    right: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 20px 32px 0 rgb(96 97 112 / 10%),0 2px 8px 0 rgb(40 41 61 / 6%) ;
+    visibility: hidden;
+    opacity: 0;
+    transition: .25s;
+    transition-timing-function: ease-in-out;
+    background-color: #fff;
+}
+.help-lists p{
+    width: 200px;
+    padding: 10px;
+    font-weight: normal;
+    &:hover{
+        font-weight: bold;
+    }
+}
+.help-lists-li:hover .help-lists{
+    visibility: visible;
+    opacity: 100%;
+    z-index: 2;
+}
+.end-nav-lists{
+    display: flex;
+    align-items: center;
+}
+.end-nav-lists p{
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+.end-nav-lists span{
+    color:var(--vi-red);
+}
+.before-end-nav img{
+    height: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+}   
+.before-end-nav::before{
+    content: "open in Vi app";
+    color: black;
+   text-decoration: underline;
+}
+@media (max-width:950px) {
+    .nav-lists{
+        display: none;
+    }
+    .end-nav-lists{
+        display: none;
+    }
+    .banner-images{
+        width: 50%;
+    }
+   
+}
+@media(min-width:950px){
+    .before-end-nav img{
+        display: none;
+    }
+    .before-end-nav::before{
+        display: none;
+    }
+ 
+}
